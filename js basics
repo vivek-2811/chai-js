@@ -1,0 +1,98 @@
+// const h="hello"
+// const n=" vivek"
+// const repo=40
+// console.log(h+n+" how are you !!")
+// console.log(`so ${h}${n} my repo count is ${repo}`)
+// backticks `` they were used to declare variables in between of it by sung ${} and variable inside it  !!
+// const gn=new String("vivek avasthi")
+// console.log(gn[3],gn[8])
+// console.log(gn.__proto__)
+// console.log("my name is : ",gn.toUpperCase())
+// console.log(gn.charAt(2))
+// console.log(gn.indexOf("v"))
+// const ns=gn.substring(2,5)
+// console.log(ns)
+// console.log(gn)
+
+
+// const num=new Number(69)
+// console.log(num)
+// const nu=100
+// console.log(nu)
+// console.log(typeof nu)
+// console.log(num.toString().length)
+
+// const t=12333.22
+// console.log(t.toFixed())
+// console.log(t.toPrecision())  //roundoff values
+// console.log(t.toLocaleString('en-IN'))
+// console.log(Math.random())
+// const maxx=20
+// const minn=10
+// console.log(Math.floor(Math.random()*(maxx-minn+1)+minn))
+console.log(Math.floor)
+
+// primtive datatypes :-
+// string,number,null,boolean,undefined,Symbol,BigInt
+const id=Symbol('123')
+const ii=Symbol('123')
+console.log(id===ii)
+
+const Bignum=693322324n
+console.log(typeof Bignum)
+// reffrence type(non-primitive)
+// Array,objects,functions
+const heros=['hulk','ironman','captain']
+let myobj={
+    name:"vivek",
+    age:21,
+    rollno:2261619,
+}
+console.table(myobj)
+const myfunction=function(){
+    console.log("this is my function creating first time in javascript !!")
+    console.log("that's all")
+}
+console.log(myfunction())
+// Stack(primitive) and heap(non-primitive) memory allocations !!!!
+let namee="vivek avasthi"
+let mname=namee
+mname="vivek awasthi"
+console.log(mname)
+console.log(namee)
+// here value will get updated after if u have updated  and original one will keep original data it will not changes !!
+
+let objj={
+    ACname:"vivek Awasthi",
+    email:"yeayeah677@gmail.com",
+    upiID:226161992
+}
+let mobjj=objj
+mobjj.ACname="vivek avasthi"
+mobjj.email="vivekavasthi6547@gmail.com"   //here value updated and objj will get reffrenced through it !!
+console.log(mobjj)
+// here value will get changes through the reffrence of the text and here data gets changes thorugh updation  !!
+
+
+
+const MARVEL=["hulk","ironaman","thor"]
+const DC=["batman","superman","flash"]
+// console.log(MARVEL)
+// MARVEL.push(DC) //it adds on existing array!!
+// console.log(MARVEL)
+// console.log(MARVEL[3][2])
+// const newDC=DC.concat(MARVEL) //it didnt add on existing array it will returns the array
+// console.log(newDC)
+// const all=[...DC,...MARVEL] //this is spread methoud !!
+// console.log(all)
+
+// const ne=[11,2,[22,11,33],[22,1,335],432]
+// const nne=ne.flat(Infinity)
+// console.log(nne)
+// console.log(Array.isArray("vivek"))
+// console.log(Array.from("vivek"))
+//  console.log(Array.from({name:"vivek"}))// for determinng through key value 
+let s1=22
+let s2=33
+let s3=21
+console.log(Array.of(s1,s2,s3)) //this is used to convert the variables into array !!
